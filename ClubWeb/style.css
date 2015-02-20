@@ -29,7 +29,7 @@ a:hover, a:active {
 .body {
 	margin: 0 auto;
 	width: 70%;
-	clear: both; /* This does't allow any flading around the body*/
+	clear: both; /* This does't allow any flading around the body */
 }
 /*------------------------------------------ Header ---------------------------------------------*/
 .mainHeader img {
