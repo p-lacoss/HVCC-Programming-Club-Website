@@ -1,0 +1,323 @@
+/*
+**/
+
+body {
+	background-image: url('images/bg-body.png');
+	color: #000305;
+	font-size:87.5%; /* This is equivalent to 14px or 12pt*/
+	font-family: Arial, 'lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+/* Styling the links*/
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #7cb453;
+}
+
+a:hover, a:active {
+	background-color: #7cb453;
+	color: #FFF;
+	padding: 1% 2%;
+}
+
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both; /* This does't allow any flading around the body*/
+}
+/*------------------------------------------ Header ---------------------------------------------*/
+.mainHeader img {
+	width:30%
+	height: auto;
+	margin: 2%, 0;
+}
+
+.mainHeader nav {
+	background: #313131;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0, auto; /* The margin is 0 because we have a margin 2% from .mainHeader img style */
+}
+
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+    height: 20px; /* The navigation height is: 
+                  40px minus padding 10px on top and 10px on bottom = 20px is the links height*/
+}
+.mainHeader nav a:hover, .mainHeader nav a:active, 
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background-color: #7cb453;
+	text-shadow: none;
+}
+.mainHeader nav ul li a {
+	border-radius: none;
+	-moz-border-radius: none;
+	-webkit-border-radius: none;
+}
+
+/*---------------------------------------- Main Content -----------------------------------------*/
+
+.mainContent {
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/* overflow: hidden; ????????? need to look this up ????????*/
+}
+
+.content {
+	width: 71%;
+	float: left;
+}
+
+.topContent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2.8%;
+}
+.contentAbout {
+	width: 100%;
+	float: left;
+}
+
+.topContentAbout {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 2% 5%;
+    margin-top: 2.8%;
+}
+.topContentAbout img {
+	width: 32%;
+	margin-top: 2.8%;
+}
+
+.bottomContent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2.8%;
+}
+/*----------------------------------- post-info ("footer") ---------------------------------------*/
+.post-info {
+    font-style: italic;
+    color: #999;
+    font-size: 90%;
+}
+/*------------------------------------------ Sidebars ---------------------------------------------*/
+.top-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 2% 0 2% 2%; /* <-- clock wize */
+	padding: 2% 3%;
+
+}
+
+.middle-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.bottom-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+/*---------------------------------------- Footer -----------------------------------------*/
+
+.mainFooter {
+	font-style: italic;
+	font-size: small;
+	width: 100%;
+	height: 40px;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #313131;
+	margin: 2% 0; /* top & bottom 2% and left & right 0% */
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
+}
+
+
+
+
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+
+
+{
+	.body {
+	    width: 90%;
+	    font-size: 95%;
+        }
+
+    .mainHeader img {
+	    width:100%;
+        }
+
+
+
+.mainHeader nav {
+	height: 160px;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.mainHeader nav ul {
+	padding-left: 0; 
+}
+
+.mainHeader nav ul li {
+ 	width: 100%;
+ 	text-align: center;
+ 	display: block;
+
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	padding: 10px 0;
+	width: 100%;
+    height: 20px; 
+}
+
+
+
+
+.content {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+.post-info{
+	display: none;
+}
+
+.topContent {
+	background-color: #FFF;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+    padding: 3% 5%;
+    margin: 1.8% 0 4% 0;
+}
+.topContentAbout {
+	background-color: #FFF;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+    padding: 3% 5%;
+    margin: 1.8% 0 4% 0;
+}
+
+.topContentAbout img {
+	width: 100%;
+	margin-top: 2.8%;
+} 
+
+.bottomContent {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 3% 5%;
+    margin: 1.8% 0 1.8% 0;
+}
+
+
+
+
+.top-sidebar, .middle-sidebar, .bottom-sidebar {
+	
+	background-color: #ede2bf;
+	width: 89%;
+	margin: 2% 2% 2% 0;
+	padding: 2% 5%;
+	border:2px solid white;
+	-moz-border:2px solid white;
+	-webkit-border:2px solid white;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.mainFooter {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
